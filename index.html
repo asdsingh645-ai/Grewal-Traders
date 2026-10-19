@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrewalTrading | Trading Insights</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 7%;
+      border-bottom: 1px solid #253047;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .logo { font-size: 25px; font-weight: bold; color: #38d9a9; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a, footer a { color: #cbd5e1; text-decoration: none; }
+    nav a:hover, footer a:hover { color: #38d9a9; }
+    .hero {
+      padding: 85px 7%;
+      background: linear-gradient(130deg, #111c31, #0b1120);
+    }
+    .tag { color: #38d9a9; font-weight: bold; }
+    h1 { font-size: clamp(36px, 6vw, 58px); line-height: 1.15; max-width: 720px; }
+    .hero p { color: #b6c3d6; max-width: 620px; font-size: 18px; }
+    .btn {
+      display: inline-block; margin: 12px 10px 0 0; padding: 12px 20px;
+      background: #38d9a9; color: #07111c; border-radius: 7px;
+      text-decoration: none; font-weight: bold;
+    }
+    .btn.secondary { background: transparent; color: #f1f5f9; border: 1px solid #536176; }
+    main { padding: 35px 7% 65px; }
+    section { margin-bottom: 55px; scroll-margin-top: 20px; }
+    h2 { font-size: 28px; }
+    .muted { color: #aab7ca; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
+    .card {
+      background: #131d30; border: 1px solid #28354b;
+      border-radius: 12px; padding: 22px;
+    }
+    .card h3 { margin-top: 0; }
+    .card p { color: #b6c3d6; }
+    .card a { color: #38d9a9; text-decoration: none; }
+    .links a { display: block; padding: 10px 0; border-bottom: 1px solid #28354b; }
+    input, textarea {
+      width: 100%; padding: 12px; margin: 7px 0 14px;
+      background: #0b1120; color: white; border: 1px solid #36445b;
+      border-radius: 6px;
+    }
+    button {
+      padding: 12px 20px; background: #38d9a9; border: 0;
+      border-radius: 6px; font-weight: bold; cursor: pointer;
+    }
+    footer { padding: 28px 7%; border-top: 1px solid #253047; color: #aab7ca; }
+    footer a { margin-right: 15px; }
+    @media(max-width:600px) {
+      header { padding: 18px 5%; }
+      nav { gap: 12px; }
+      .hero { padding: 55px 5%; }
+      main { padding: 25px 5%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">GrewalTrading.</div>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="analysis.html">Market Analysis</a>
+  <a href="guides.html">Trading Guides</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+  <div class="tag">MARKET KNOWLEDGE. BETTER DECISIONS.</div>
+  <h1>Trade smarter.<br>Understand the market.</h1>
+  <p>
+    Explore trading education, technical analysis concepts,
+    market insights and useful tools in one place.
+  </p>
+  <a class="btn" href="#insights">Explore Insights</a>
+  <a class="btn secondary" href="#guides">Learn Trading</a>
+</div>
+
+<main>
+  <section id="insights">
+    <h2>Latest Market Insights</h2>
+    <p class="muted">Add your own articles and analysis here.</p>
+    <div class="grid">
+      <article class="card">
+        <h3>Technical Analysis Basics</h3>
+        <p>Learn about charts, trends, support, resistance and price action.</p>
+        <a href="#guides">Read more →</a>
+      </article>
+      <article class="card">
+        <h3>Risk Management</h3>
+        <p>Understand position sizing, stop losses and risk-reward ratios.</p>
+        <a href="#guides">Read more →</a>
+      </article>
+      <article class="card">
+        <h3>Market Trends</h3>
+        <p>Learn how traders study market structure and price movements.</p>
+        <a href="#guides">Read more →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="guides">
+    <h2>Trading Guides</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Stock Market Basics</h3>
+        <p>Build a foundation in shares, indices and market orders.</p>
+      </div>
+      <div class="card">
+        <h3>Options Education</h3>
+        <p>Learn calls, puts, expiry, premiums and options risks.</p>
+      </div>
+      <div class="card">
+        <h3>Trading Psychology</h3>
+        <p>Explore discipline, patience and common trading mistakes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="links">
+    <h2>Useful Links</h2>
+    <div class="card links">
+      <a href="https://www.nseindia.com/" target="_blank" rel="noopener">NSE India ↗</a>
+      <a href="https://www.bseindia.com/" target="_blank" rel="noopener">BSE India ↗</a>
+      <a href="https://www.sebi.gov.in/" target="_blank" rel="noopener">SEBI Official Website ↗</a>
+      <a href="https://www.tradingview.com/" target="_blank" rel="noopener">TradingView Charts ↗</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About GrewalTrading</h2>
+    <div class="card">
+      <p>
+        GrewalTrading is an independent trading education website
+        designed to share market knowledge, educational articles
+        and useful financial resources.
+      </p>
+      <p class="muted">
+        Replace this text with your business introduction and experience.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="card">
+      <p class="muted">
+        This sample form is for demonstration. It does not send messages.
+      </p>
+      <form id="contactForm">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" placeholder="Enter your name" required>
+        <label for="email">Your Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formMessage" class="muted" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section id="disclaimer">
+    <h2>Disclaimer</h2>
+    <div class="card">
+      <p>
+        Content on this website is for educational and informational
+        purposes only. It is not a recommendation to buy or sell any
+        security. Trading and investing involve financial risk.
+        Verify information independently before making decisions.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> GrewalTrading. All rights reserved.</p>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="#disclaimer">Disclaimer</a>
+  <p>Educational content only. No guaranteed returns.</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("formMessage").textContent =
+      "Demo only: your message has not been sent. Connect a form service to receive messages.";
+  });
+</script>
+
+</body>
+</html>
